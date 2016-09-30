@@ -27,11 +27,13 @@ class priceTextfieldDelegate : NSObject, UITextFieldDelegate {
     // Ideal -> typing 4-2-7-5 would produce $0.00, $0.04, $0.42, $4.27, $42.75.
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
+        // it's gonna be $0.00 as what it's there at textfield - even user typed "8" -> it's showing $0.08 on screen depends on what you called down below after stringByReplacingCharactersInRange
         var newText = textField.text! as NSString // only NSString can call below method, String cannot - to set range
-        // resetting newText range from 0 to the end which user just finish typing - ask Owen!!!
-        // so that u can manuplicate the text, what to do with it - important as it prevent app to crash
+        // resetting newText range from 0 to the end which user just finish typing - what user truly tuped!
+
+        print("before stringByReplacingCharaInrange \(newText)")
         newText = newText.stringByReplacingCharactersInRange(range, withString: string) // newText NSString type so to call below method
-        
+        print("after stringByReplacingCharInRange \(newText)")
         var newTextString = String(newText) // NSString => to String -> so can use String method... can't use newText for direct calculation
         
         // I did something very wrong before - doing calculation directly to newText -> which is everything user typed! I should set another var to store the num for calculation

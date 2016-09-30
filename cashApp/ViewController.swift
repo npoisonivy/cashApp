@@ -36,15 +36,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // user tap textfield, trigger to call its delegate below func
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
         // if switch is on, allow user to edit. vice versa
-        
         return self.textSwitch.on
-        // then where to show kb???? -> once user taps textfield, textfield becomes the firstresponder. kb will show!
+        // then where to show kb???? -> once user taps textfield, textfield becomes the firstresponder. kb will show automatically!
     }
     
     // after user tried to edit the textfield, nothing happen as switch is off
     // then user toggle switch, trigger below func -> if switch is turned off -> hide the keyboard
     // when dragging from MSB controller -> choose action - "valueChanged" as per Apple' developer
-    // when switch is off, u want to dismiss the keyboard by resigningFirstResponder!
+    // when switch is off, dismiss the keyboard by resigningFirstResponder!
     @IBAction func switchButtonToggled(sender: AnyObject) {
         if !(sender as! UISwitch).on {  // if it's off, then dismiss the keyboard
             textTextfield.resignFirstResponder()
@@ -57,30 +56,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
-    
-    // whenever user add/ delete ONE char, textfield will call delegate "shouldChangeCharactersInRange" method
-//    Lockable text field. This is composed of a text field and a switch. When the switch is on, the text field can be edited. When the switch is off, the text field cannot be edited.
-    // func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
-      //  var newText = textField.text! as NSString // resetting textfield's text
-        //newText = newText.stringByReplacingCharactersInRange(range, withString: string)
-        // and it's up to us if we want to show user's typed text or NOT
-        //if self.textSwitch.on {
-          //  print("show what user type!")
-            //return true
-        //} else {
-          //  return false // do not show what user has typed!
-        //}
-    //}
-    
-    
-    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textTextfield.resignFirstResponder()
         return true // enter button - hide the kb
     }
-    
-    
 }
 
 
