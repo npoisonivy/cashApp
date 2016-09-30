@@ -10,7 +10,6 @@
 		A0B622E31D9A30EC002B6206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B622E21D9A30EC002B6206 /* AppDelegate.swift */; };
 		A0B622E51D9A30EC002B6206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B622E41D9A30EC002B6206 /* ViewController.swift */; };
 		A0B622EA1D9A30EC002B6206 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B622E91D9A30EC002B6206 /* Assets.xcassets */; };
-		A0B622ED1D9A30EC002B6206 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B622EB1D9A30EC002B6206 /* LaunchScreen.storyboard */; };
 		A0B622FC1D9A340F002B6206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B622FA1D9A340F002B6206 /* Main.storyboard */; };
 		A0B622FE1D9A3B8E002B6206 /* zipcodeTextfieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B622FD1D9A3B8E002B6206 /* zipcodeTextfieldDelegate.swift */; };
 		A0B623001D9A3BDF002B6206 /* priceTextfieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B622FF1D9A3BDF002B6206 /* priceTextfieldDelegate.swift */; };
@@ -21,7 +20,6 @@
 		A0B622E21D9A30EC002B6206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0B622E41D9A30EC002B6206 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A0B622E91D9A30EC002B6206 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A0B622EC1D9A30EC002B6206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0B622EE1D9A30EC002B6206 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B622FB1D9A340F002B6206 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0B622FD1D9A3B8E002B6206 /* zipcodeTextfieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = zipcodeTextfieldDelegate.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 				A0B622FD1D9A3B8E002B6206 /* zipcodeTextfieldDelegate.swift */,
 				A0B622FA1D9A340F002B6206 /* Main.storyboard */,
 				A0B622E91D9A30EC002B6206 /* Assets.xcassets */,
-				A0B622EB1D9A30EC002B6206 /* LaunchScreen.storyboard */,
 				A0B622EE1D9A30EC002B6206 /* Info.plist */,
 			);
 			path = cashApp;
@@ -130,7 +127,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0B622FC1D9A340F002B6206 /* Main.storyboard in Resources */,
-				A0B622ED1D9A30EC002B6206 /* LaunchScreen.storyboard in Resources */,
 				A0B622EA1D9A30EC002B6206 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,14 +148,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A0B622EB1D9A30EC002B6206 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0B622EC1D9A30EC002B6206 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		A0B622FA1D9A340F002B6206 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
